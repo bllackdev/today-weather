@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image, } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { RectButton } from 'react-native-gesture-handler';
+
 import PageHeader from '../../components/PageHeader';
 
 import searchIcon from '../../assets/img/icons/search.png';
@@ -33,13 +35,13 @@ function Landing() {
       </View>
 
       <View style={styles.searchButton}>
-        <TouchableOpacity
+        <RectButton
           onPress={handleNavigateToWeatherPage}
           style={styles.button}
         >
           <Image source={searchIcon} style={styles.iconButton} />
           <Text style={styles.textButton}>Pesquisar</Text>
-        </TouchableOpacity>
+        </RectButton>
       </View>
     </View>
   )
