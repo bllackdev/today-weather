@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image, } from 'react-native';
-// import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import PageHeader from '../../components/PageHeader';
 
 import searchIcon from '../../assets/img/icons/search.png';
@@ -11,9 +11,9 @@ import styles from './styles';
 
 
 function Landing() {
-  // const { navigate } = useNavigation();
+  const { navigate } = useNavigation();
 
-  function handleToWeatherPage() {
+  function handleNavigateToWeatherPage() {
     navigate('Weather');
   }
 
@@ -34,7 +34,7 @@ function Landing() {
 
       <View style={styles.searchButton}>
         <TouchableOpacity
-          // onPress={handleToWeatherPage} 
+          onPress={handleNavigateToWeatherPage}
           style={styles.button}
         >
           <Image source={searchIcon} style={styles.iconButton} />
