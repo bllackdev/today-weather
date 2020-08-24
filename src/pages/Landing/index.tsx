@@ -31,14 +31,16 @@ function Landing() {
           placeholderTextColor="#c1bccc"
         />
       </View>
-      <TouchableOpacity
-        // onPress={handleToWeatherPage} 
-        style={styles.button}
-      >
-        <Image source={searchIcon} />
-        <Text>Pesquisar</Text>
-      </TouchableOpacity>
 
+      <View style={styles.searchButton}>
+        <TouchableOpacity
+          // onPress={handleToWeatherPage} 
+          style={styles.button}
+        >
+          <Image source={searchIcon} style={styles.iconButton} />
+          <Text style={styles.textButton}>Pesquisar</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }

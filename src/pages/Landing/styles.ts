@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
 
   footer: {
-    marginTop: 10,
+    marginTop: -10,
     padding: 40,
 
   },
@@ -26,17 +26,38 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     justifyContent: 'center',
     paddingHorizontal: 16,
-    marginTop: 40,
+    marginTop: 20,
     marginBottom: 16,
+    fontFamily: 'IndieFlower_400Regular',
+  },
+
+  searchButton: {
+    paddingHorizontal: 95,
   },
 
   button: {
-    height: 150,
-    width: '48%',
+    padding: 30,
     backgroundColor: '#4B82A0',
-    borderRadius: 8,
-    padding: 24,
-    justifyContent: 'space-between',
+    borderRadius: 10,
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+
+  iconButton: {
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
+
+  },
+
+  textButton: {
+    color: '#FFF',
+    fontFamily: 'IndieFlower_400Regular',
+    fontSize: 20,
+    marginLeft: 6,
   },
 });
 
